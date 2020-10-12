@@ -1,0 +1,18 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<h1>Fixed Deposit Calculator</h1>
+<p>It helps you calculate the maturity amount and interest earned for any FD account.</p>
+<form action=>
+ <label for="fdamount">FD Amount(Rs.):</label> <input type="text"id=""fdamount" placeholder="enter amount" /><br/><br/>
+<label for="period">FD Period: </label><input type="text"id="period" placeholder="enter years" /><br/> <br/>
+<label for="inetrest">Interest (%): </label><input type="text" id="interest"placeholder="0.00%" ><br/><br/>
+<input type="submit" value="submit" />
+</form>

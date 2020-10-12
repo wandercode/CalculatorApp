@@ -1,0 +1,27 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "FDCalculator";
+    
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome @ViewData["Aneesh"]</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <!--<form method="POST" >
+    <label for="fname">Radius Of Circle</label>
+  <input type="text" id="fname" name="radius"><br><br>  
+  <input type="submit" value="Calculate"> 
+   <h1> area=@Model._Area</h1>   
+</form>-->
+<form method="POST">
+   <label for="fdamount">FD Amount(Rs.):</label> 
+   <input type="text"id="fdamount" name="amount"placeholder="enter amount" /><br/><br/>
+   <label for="period">FD Period: </label>
+   <input type="text"id="nofperiod" name="period" placeholder="enter years" /><br/> <br/>
+   <label for="inetrest">Interest (%): </label>
+   <input type="text" id="interest"name="interest"placeholder="0.00%" /><br/><br/>
+   <input type="submit" value="Calculate" /><br/><br/>
+   <label>FD=@ViewData["Amount"]</label>
+</form>
+</div>
